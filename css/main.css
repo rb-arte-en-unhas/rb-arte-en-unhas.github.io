@@ -41,7 +41,7 @@ body {
 .icon {
     height: 3em;
     width: 3em;
-    margin: 0.3rem;
+    /* margin: 0.3rem; */
     padding: 0;
 }
 
