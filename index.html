@@ -12,14 +12,14 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://xn--rbuas-qta.com">
+    <meta property="og:url" content="https://rbuñas.com">
     <meta property="og:title" content="RB Arte en Uñas">
     <meta property="og:description" content="Arte en Uñas">
     <meta property="og:image" content="https://rbuñas.com/images/logo.svg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://xn--rbuas-qta.com">
+    <meta property="twitter:url" content="https://rbuñas.com">
     <meta property="twitter:title" content="RB Arte en Uñas">
     <meta property="twitter:description" content="Arte en Uñas">
     <meta property="twitter:image" content="https://rbuñas.com/images/logo.svg">
@@ -55,6 +55,7 @@
         </div> -->
     </div>
     <script lang="javascript">
+        const AVAILABLE_BGS = ['bg1.mp4', 'bg2.mp4', 'bg3.mp4']
         document.addEventListener('DOMContentLoaded', function () {
             console.log('loaded');
             let v = document.getElementById('video-bg');
@@ -62,6 +63,14 @@
 
                 v.play();
             });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            let bg = AVAILABLE_BGS[Date.now() % AVAILABLE_BGS.length];
+            let vid = document.querySelector('#video-bg');
+            vid.setAttribute("src", `video/${bg}`);
+            vg.setAttribute(attribute, val)
+            rand();
         });
     </script>
 </body>
