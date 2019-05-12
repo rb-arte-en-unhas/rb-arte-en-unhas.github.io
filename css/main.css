@@ -62,6 +62,8 @@ a:hover {
     .icon {
         width: 5em;
         height: 5em;
+        margin-right: -0.7em;
+        margin-left: -0.7em;
     }
 }
 
